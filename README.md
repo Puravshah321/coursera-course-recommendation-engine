@@ -1149,14 +1149,26 @@ embeddings = model.encode(df['content_soup'])
 
 1. **Clone/Download Repository**
 2. **Install Dependencies**
+   Install the required dependencies using the provided `requirements.txt`:
    ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn
+   pip install -r requirements.txt
    ```
-3. **Run Notebooks in Order**
+3. **Run the Streamlit Dashboard App**
+   To launch the interactive web recommendation engine dashboard:
+   ```bash
+   streamlit run app.py
+   ```
+   Or if `streamlit` is not directly in your system PATH:
+   ```bash
+   python -m streamlit run app.py
+   ```
+   Once started, open [http://localhost:8501](http://localhost:8501) in your browser.
+
+4. **Run Notebooks in Order (Optional - for Model Training & Analysis)**
    - `datacleaning_eda_feature_engineering.ipynb` - Data preparation
    - `Recommendation_Engine.ipynb` - Model training & evaluation
 
-4. **Get Recommendations**
+5. **Get Recommendations Programmatically (Python)**
    ```python
    # After running both notebooks:
    recommendations = hybrid_recommend(
