@@ -1,5 +1,7 @@
 # Coursera Course Recommendation Engine
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://coursera-course-recommendation-engine.streamlit.app/)
+
 ## 1. Project Overview
 
 This project tackles the problem of helping learners discover courses most relevant to their interests from Coursera's extensive course catalog. While Coursera hosts thousands of courses across diverse domains, the challenge lies in surfacing personalized recommendations that match both a learner's content preferences and quality expectations.
@@ -1144,6 +1146,11 @@ embeddings = model.encode(df['content_soup'])
 ---
 
 ## How to Use
+
+### Live Demo
+
+You can test the live, interactive recommendation engine directly in your web browser:
+👉 **[Live Streamlit Application](https://coursera-course-recommendation-engine.streamlit.app/)**
 
 ### Quick Start
 
